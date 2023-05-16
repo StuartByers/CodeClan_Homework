@@ -1,7 +1,8 @@
 public class WaterBottle {
+
     private int volume = 100;
 
-    public void drink() {
+    public void water() {
         if (volume >= 10) {
             volume -= 10;
         } else {
@@ -13,7 +14,7 @@ public class WaterBottle {
         volume = 0;
     }
 
-    public void fill() {
+    public void full() {
         volume = 100;
     }
 
