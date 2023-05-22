@@ -21,7 +21,10 @@ public class BusTest {
 
     @Test
     public void testGetNumberOfPassengers() {
-        assertEquals(0, bus.getNumberOfPassengers());
+        bus.addPassenger(person1);
+        bus.addPassenger(person2);
+
+        assertEquals(2, bus.getNumberOfPassengers());
     }
 
     @Test
